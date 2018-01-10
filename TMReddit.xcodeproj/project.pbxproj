@@ -10,7 +10,7 @@
 		30CF3E9FA507BFF10710BCAF /* Pods_TMReddit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B8381AE72C65C34764EB50 /* Pods_TMReddit.framework */; };
 		D8DEF377A25572E3CC354215 /* Pods_TMRedditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21A03DD221FC27542361DDC /* Pods_TMRedditTests.framework */; };
 		E2097CE02006868300D963DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CDF2006868300D963DC /* AppDelegate.swift */; };
-		E2097CE22006868300D963DC /* TMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CE12006868300D963DC /* TMViewController.swift */; };
+		E2097CE22006868300D963DC /* TMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CE12006868300D963DC /* TMHomeViewController.swift */; };
 		E2097CE52006868300D963DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2097CE32006868300D963DC /* Main.storyboard */; };
 		E2097CE72006868300D963DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2097CE62006868300D963DC /* Assets.xcassets */; };
 		E2097CEA2006868300D963DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2097CE82006868300D963DC /* LaunchScreen.storyboard */; };
@@ -58,7 +58,7 @@
 		E0CAAF816E39B7A009ACE58E /* Pods-TMReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMReddit/Pods-TMReddit.debug.xcconfig"; sourceTree = "<group>"; };
 		E2097CDC2006868300D963DC /* TMReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2097CDF2006868300D963DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2097CE12006868300D963DC /* TMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMViewController.swift; sourceTree = "<group>"; };
+		E2097CE12006868300D963DC /* TMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMHomeViewController.swift; sourceTree = "<group>"; };
 		E2097CE42006868300D963DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2097CE62006868300D963DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2097CE92006868300D963DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -259,7 +259,7 @@
 		E2097D3520068B8400D963DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E2097CE12006868300D963DC /* TMViewController.swift */,
+				E2097CE12006868300D963DC /* TMHomeViewController.swift */,
 				E2097D3A200695D500D963DC /* TMDataManager.swift */,
 			);
 			path = Controller;
@@ -587,7 +587,7 @@
 				E2097D3920068EFB00D963DC /* TMHomeTableViewCell.swift in Sources */,
 				E2097D25200687F200D963DC /* TMBaseASyncOperation.swift in Sources */,
 				E2097D26200687F200D963DC /* TMServiceOperation.swift in Sources */,
-				E2097CE22006868300D963DC /* TMViewController.swift in Sources */,
+				E2097CE22006868300D963DC /* TMHomeViewController.swift in Sources */,
 				E2097D22200687F200D963DC /* TMServiceDataModel.swift in Sources */,
 				E2097CE02006868300D963DC /* AppDelegate.swift in Sources */,
 			);

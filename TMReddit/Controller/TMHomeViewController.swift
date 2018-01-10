@@ -20,11 +20,13 @@ class TMHomeViewController: UIViewController {
     private(set) var cards = [TMCard]()
     private(set) var afterLink: String?
     private(set) var isLoadingData: Bool = false
+    private let refreshControl = UIRefreshControl()
     
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
+        configureTableView()
         getData()
     }
     
@@ -32,6 +34,16 @@ class TMHomeViewController: UIViewController {
     private func configureTableView() {
         homeTableView.rowHeight = UITableViewAutomaticDimension
         homeTableView.estimatedRowHeight = 140
+        homeTableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(loadNewData(_:)), for: .valueChanged)
+    }
+    
+    @objc func loadNewData(_ refreshControl: UIRefreshControl) {
+        cards = [TMCard]()
+        afterLink = nil
+        homeTableView.reloadData()
+        refreshControl.endRefreshing()
+        getData()
     }
     
     private func getData() {
@@ -59,8 +71,13 @@ class TMHomeViewController: UIViewController {
             if let data = data, let newCards = data.cards {
                 strongSelf.cards += newCards
                 strongSelf.afterLink = data.afterLink
-                strongSelf.homeTableView.reloadData()
-                strongSelf.isLoadingData = false
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else {
+                        return
+                    }
+                    strongSelf.homeTableView.reloadData()
+                    strongSelf.isLoadingData = false
+                }
             }
         }
     }
@@ -80,6 +97,7 @@ extension TMHomeViewController: UITableViewDataSource {
         }
         let card = cards[indexPath.row]
         cell.configureCell(card: card)
+        cell.selectionStyle = .none
         return cell
     }
 }
