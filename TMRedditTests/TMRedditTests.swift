@@ -13,24 +13,37 @@ class TMRedditTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCard() {
+        let card = TMCard(title: "card1", commentNumber: "1", score: "1", imageURL: "http://www.abc.com/image/1")
+        
+        XCTAssertNotNil(card.title , "title can't be nil")
+        XCTAssertNotNil(card.commentNumber , "title can't be nil")
+        XCTAssertNotNil(card.score , "title can't be nil")
+        XCTAssertNotNil(card.imageURL , "title can't be nil")
+        
+        XCTAssert(card.title == "card1", "title is wrongly mapped")
+        XCTAssert(card.commentNumber == "1", "comment number is wrongly mapped")
+        XCTAssert(card.score == "1", "score is wrongly mapped")
+        XCTAssert(card.imageURL == "http://www.abc.com/image/1", "image is wrongly mapped")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCards() {
+        let card1 = TMCard(title: "card1", commentNumber: "1", score: "1", imageURL: "http://www.abc.com/image/1")
+        let card2 = TMCard(title: "card2", commentNumber: "2", score: "2", imageURL: "http://www.abc.com/image/2")
+        let card3 = TMCard(title: "card3", commentNumber: "3", score: "3", imageURL: "http://www.abc.com/image/3")
+        let card4 = TMCard(title: "card4", commentNumber: "4", score: "4", imageURL: "http://www.abc.com/image/4")
+        
+        let cards = [card1,card2,card3,card4]
+        let cardsModel = TMCards(afterLink: "abc", cards: cards)
+        
+        XCTAssert(cardsModel.afterLink == "abc", "afterLink is wrongly mapped")
+        XCTAssert(cardsModel.cards?.count == 4, "No of cards not matching")
     }
     
 }

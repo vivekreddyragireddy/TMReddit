@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMReddit/Controller/TMDataManager.swift"
+            timestampString = "537318458.965783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "parseDataModel(dataModel:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static TMReddit.TMDataManager.(parseDataModel in _4886154AF93E77A2F13FE11C1D412C42)(dataModel: TMReddit.TMServiceDataModel) -&gt; Swift.Optional&lt;Swift.Array&lt;TMReddit.TMCard&gt;&gt;"
+                  moduleName = "TMReddit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prokarma/Desktop/TMReddit/TMReddit/Controller/TMDataManager.swift"
+                  timestampString = "537307030.894331"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "3784">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () -&gt; SwiftyJSON.JSON in static TMReddit.TMDataManager.(parseDataModel in _4886154AF93E77A2F13FE11C1D412C42)(dataModel: TMReddit.TMServiceDataModel) -&gt; Swift.Optional&lt;Swift.Array&lt;TMReddit.TMCard&gt;&gt;"
+                  moduleName = "TMReddit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prokarma/Desktop/TMReddit/TMReddit/Controller/TMDataManager.swift"
+                  timestampString = "537307030.89755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "103">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMReddit/Controller/TMViewController.swift"
+            timestampString = "537318458.96588"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

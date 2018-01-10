@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CF3E9FA507BFF10710BCAF /* Pods_TMReddit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B8381AE72C65C34764EB50 /* Pods_TMReddit.framework */; };
+		D8DEF377A25572E3CC354215 /* Pods_TMRedditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21A03DD221FC27542361DDC /* Pods_TMRedditTests.framework */; };
 		E2097CE02006868300D963DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CDF2006868300D963DC /* AppDelegate.swift */; };
-		E2097CE22006868300D963DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CE12006868300D963DC /* ViewController.swift */; };
+		E2097CE22006868300D963DC /* TMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CE12006868300D963DC /* TMViewController.swift */; };
 		E2097CE52006868300D963DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2097CE32006868300D963DC /* Main.storyboard */; };
 		E2097CE72006868300D963DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2097CE62006868300D963DC /* Assets.xcassets */; };
 		E2097CEA2006868300D963DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2097CE82006868300D963DC /* LaunchScreen.storyboard */; };
 		E2097CF52006868300D963DC /* TMRedditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CF42006868300D963DC /* TMRedditTests.swift */; };
 		E2097D002006868300D963DC /* TMRedditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097CFF2006868300D963DC /* TMRedditUITests.swift */; };
+		E2097D22200687F200D963DC /* TMServiceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D10200687F200D963DC /* TMServiceDataModel.swift */; };
+		E2097D23200687F200D963DC /* TMServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D11200687F200D963DC /* TMServiceRequest.swift */; };
+		E2097D24200687F200D963DC /* TMServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D12200687F200D963DC /* TMServiceResponse.swift */; };
+		E2097D25200687F200D963DC /* TMBaseASyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D14200687F200D963DC /* TMBaseASyncOperation.swift */; };
+		E2097D26200687F200D963DC /* TMServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D15200687F200D963DC /* TMServiceOperation.swift */; };
+		E2097D27200687F200D963DC /* TMServiceOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D16200687F200D963DC /* TMServiceOperationQueue.swift */; };
+		E2097D32200688E800D963DC /* TMSITLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D31200688E800D963DC /* TMSITLogger.swift */; };
+		E2097D3720068DBE00D963DC /* TMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D3620068DBE00D963DC /* TMCard.swift */; };
+		E2097D3920068EFB00D963DC /* TMHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D3820068EFB00D963DC /* TMHomeTableViewCell.swift */; };
+		E2097D3B200695D500D963DC /* TMDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D3A200695D500D963DC /* TMDataManager.swift */; };
+		E2097D3D2006A1E300D963DC /* TMCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D3C2006A1E300D963DC /* TMCards.swift */; };
+		E2097D422006C9A500D963DC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2097D412006C9A500D963DC /* Reachability.swift */; };
+		E59BC2EBF5A6E9E98C1479E6 /* Pods_TMRedditUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27860C5615F11CBF244BB6A5 /* Pods_TMRedditUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1180CDEC21AADB531D670F14 /* Pods-TMRedditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMRedditUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMRedditUITests/Pods-TMRedditUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2546F8C2EAAE112AED1C902E /* Pods-TMReddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMReddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMReddit/Pods-TMReddit.release.xcconfig"; sourceTree = "<group>"; };
+		27860C5615F11CBF244BB6A5 /* Pods_TMRedditUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMRedditUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE8D65B4EE7089FB5937472 /* Pods-TMRedditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMRedditTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMRedditTests/Pods-TMRedditTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DBCD83155DA42BA101BE29C /* Pods-TMRedditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMRedditTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMRedditTests/Pods-TMRedditTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E6D007ECDE4D1E1DBA6F8F /* Pods-TMRedditUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMRedditUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMRedditUITests/Pods-TMRedditUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0CAAF816E39B7A009ACE58E /* Pods-TMReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMReddit/Pods-TMReddit.debug.xcconfig"; sourceTree = "<group>"; };
 		E2097CDC2006868300D963DC /* TMReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2097CDF2006868300D963DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2097CE12006868300D963DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2097CE12006868300D963DC /* TMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMViewController.swift; sourceTree = "<group>"; };
 		E2097CE42006868300D963DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2097CE62006868300D963DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2097CE92006868300D963DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +69,20 @@
 		E2097CFB2006868300D963DC /* TMRedditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMRedditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2097CFF2006868300D963DC /* TMRedditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMRedditUITests.swift; sourceTree = "<group>"; };
 		E2097D012006868300D963DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2097D10200687F200D963DC /* TMServiceDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMServiceDataModel.swift; sourceTree = "<group>"; };
+		E2097D11200687F200D963DC /* TMServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMServiceRequest.swift; sourceTree = "<group>"; };
+		E2097D12200687F200D963DC /* TMServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMServiceResponse.swift; sourceTree = "<group>"; };
+		E2097D14200687F200D963DC /* TMBaseASyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBaseASyncOperation.swift; sourceTree = "<group>"; };
+		E2097D15200687F200D963DC /* TMServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMServiceOperation.swift; sourceTree = "<group>"; };
+		E2097D16200687F200D963DC /* TMServiceOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMServiceOperationQueue.swift; sourceTree = "<group>"; };
+		E2097D31200688E800D963DC /* TMSITLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMSITLogger.swift; sourceTree = "<group>"; };
+		E2097D3620068DBE00D963DC /* TMCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMCard.swift; sourceTree = "<group>"; };
+		E2097D3820068EFB00D963DC /* TMHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMHomeTableViewCell.swift; sourceTree = "<group>"; };
+		E2097D3A200695D500D963DC /* TMDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDataManager.swift; sourceTree = "<group>"; };
+		E2097D3C2006A1E300D963DC /* TMCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMCards.swift; sourceTree = "<group>"; };
+		E2097D412006C9A500D963DC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E21A03DD221FC27542361DDC /* Pods_TMRedditTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMRedditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B8381AE72C65C34764EB50 /* Pods_TMReddit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMReddit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CF3E9FA507BFF10710BCAF /* Pods_TMReddit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DEF377A25572E3CC354215 /* Pods_TMRedditTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59BC2EBF5A6E9E98C1479E6 /* Pods_TMRedditUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2A24382BE2AF5349AF99902 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3B8381AE72C65C34764EB50 /* Pods_TMReddit.framework */,
+				E21A03DD221FC27542361DDC /* Pods_TMRedditTests.framework */,
+				27860C5615F11CBF244BB6A5 /* Pods_TMRedditUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB7A81DC18D060C52B804AE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0CAAF816E39B7A009ACE58E /* Pods-TMReddit.debug.xcconfig */,
+				2546F8C2EAAE112AED1C902E /* Pods-TMReddit.release.xcconfig */,
+				6DBCD83155DA42BA101BE29C /* Pods-TMRedditTests.debug.xcconfig */,
+				6CE8D65B4EE7089FB5937472 /* Pods-TMRedditTests.release.xcconfig */,
+				1180CDEC21AADB531D670F14 /* Pods-TMRedditUITests.debug.xcconfig */,
+				A5E6D007ECDE4D1E1DBA6F8F /* Pods-TMRedditUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2097CD32006868300D963DC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +143,8 @@
 				E2097CF32006868300D963DC /* TMRedditTests */,
 				E2097CFE2006868300D963DC /* TMRedditUITests */,
 				E2097CDD2006868300D963DC /* Products */,
+				BB7A81DC18D060C52B804AE0 /* Pods */,
+				B2A24382BE2AF5349AF99902 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				E2097CDF2006868300D963DC /* AppDelegate.swift */,
-				E2097CE12006868300D963DC /* ViewController.swift */,
-				E2097CE32006868300D963DC /* Main.storyboard */,
-				E2097CE62006868300D963DC /* Assets.xcassets */,
-				E2097CE82006868300D963DC /* LaunchScreen.storyboard */,
-				E2097CEB2006868300D963DC /* Info.plist */,
+				E2097D3420068B6800D963DC /* Model */,
+				E2097D3F2006BDF100D963DC /* View */,
+				E2097D3520068B8400D963DC /* Controller */,
+				E2097D0D200687F200D963DC /* Service */,
+				E2097D3320068AFD00D963DC /* Resources */,
+				E2097D30200688CD00D963DC /* Utils */,
 			);
 			path = TMReddit;
 			sourceTree = "<group>";
@@ -125,6 +190,97 @@
 			path = TMRedditUITests;
 			sourceTree = "<group>";
 		};
+		E2097D0D200687F200D963DC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D0E200687F200D963DC /* Common */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E2097D0E200687F200D963DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D0F200687F200D963DC /* ServiceModel */,
+				E2097D13200687F200D963DC /* ServiceOperation */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E2097D0F200687F200D963DC /* ServiceModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D10200687F200D963DC /* TMServiceDataModel.swift */,
+				E2097D11200687F200D963DC /* TMServiceRequest.swift */,
+				E2097D12200687F200D963DC /* TMServiceResponse.swift */,
+			);
+			path = ServiceModel;
+			sourceTree = "<group>";
+		};
+		E2097D13200687F200D963DC /* ServiceOperation */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D14200687F200D963DC /* TMBaseASyncOperation.swift */,
+				E2097D15200687F200D963DC /* TMServiceOperation.swift */,
+				E2097D16200687F200D963DC /* TMServiceOperationQueue.swift */,
+			);
+			path = ServiceOperation;
+			sourceTree = "<group>";
+		};
+		E2097D30200688CD00D963DC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D31200688E800D963DC /* TMSITLogger.swift */,
+				E2097D402006C9A500D963DC /* Rechability */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2097D3320068AFD00D963DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2097CEB2006868300D963DC /* Info.plist */,
+				E2097CE62006868300D963DC /* Assets.xcassets */,
+				E2097CE82006868300D963DC /* LaunchScreen.storyboard */,
+				E2097CE32006868300D963DC /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2097D3420068B6800D963DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D3620068DBE00D963DC /* TMCard.swift */,
+				E2097D3C2006A1E300D963DC /* TMCards.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2097D3520068B8400D963DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2097CE12006868300D963DC /* TMViewController.swift */,
+				E2097D3A200695D500D963DC /* TMDataManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2097D3F2006BDF100D963DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D3820068EFB00D963DC /* TMHomeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2097D402006C9A500D963DC /* Rechability */ = {
+			isa = PBXGroup;
+			children = (
+				E2097D412006C9A500D963DC /* Reachability.swift */,
+			);
+			path = Rechability;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2097D042006868300D963DC /* Build configuration list for PBXNativeTarget "TMReddit" */;
 			buildPhases = (
+				2B7FA2B2A38B577F86ED1175 /* [CP] Check Pods Manifest.lock */,
 				E2097CD82006868300D963DC /* Sources */,
 				E2097CD92006868300D963DC /* Frameworks */,
 				E2097CDA2006868300D963DC /* Resources */,
+				DAEE0B443FD85DE8C7198A92 /* [CP] Embed Pods Frameworks */,
+				F850796623E320327776AFA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2097D072006868300D963DC /* Build configuration list for PBXNativeTarget "TMRedditTests" */;
 			buildPhases = (
+				CF51B7112AA8E338B3A9F42E /* [CP] Check Pods Manifest.lock */,
 				E2097CEC2006868300D963DC /* Sources */,
 				E2097CED2006868300D963DC /* Frameworks */,
 				E2097CEE2006868300D963DC /* Resources */,
+				CA14A5902758B90F2B3180A9 /* [CP] Embed Pods Frameworks */,
+				FD09B1F569C44C2EEC9200B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2097D0A2006868300D963DC /* Build configuration list for PBXNativeTarget "TMRedditUITests" */;
 			buildPhases = (
+				000EDDF826DA4883C88F9853 /* [CP] Check Pods Manifest.lock */,
 				E2097CF72006868300D963DC /* Sources */,
 				E2097CF82006868300D963DC /* Frameworks */,
 				E2097CF92006868300D963DC /* Resources */,
+				FAAA56880F402CE0AC81CA44 /* [CP] Embed Pods Frameworks */,
+				CD6EEA87D8209D087B5AADCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +419,176 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		000EDDF826DA4883C88F9853 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMRedditUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B7FA2B2A38B577F86ED1175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMReddit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA14A5902758B90F2B3180A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMRedditTests/Pods-TMRedditTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6EEA87D8209D087B5AADCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMRedditUITests/Pods-TMRedditUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF51B7112AA8E338B3A9F42E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMRedditTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAEE0B443FD85DE8C7198A92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TMReddit/Pods-TMReddit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMReddit/Pods-TMReddit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F850796623E320327776AFA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMReddit/Pods-TMReddit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAAA56880F402CE0AC81CA44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMRedditUITests/Pods-TMRedditUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD09B1F569C44C2EEC9200B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMRedditTests/Pods-TMRedditTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2097CD82006868300D963DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2097CE22006868300D963DC /* ViewController.swift in Sources */,
+				E2097D422006C9A500D963DC /* Reachability.swift in Sources */,
+				E2097D3D2006A1E300D963DC /* TMCards.swift in Sources */,
+				E2097D3B200695D500D963DC /* TMDataManager.swift in Sources */,
+				E2097D32200688E800D963DC /* TMSITLogger.swift in Sources */,
+				E2097D3720068DBE00D963DC /* TMCard.swift in Sources */,
+				E2097D27200687F200D963DC /* TMServiceOperationQueue.swift in Sources */,
+				E2097D23200687F200D963DC /* TMServiceRequest.swift in Sources */,
+				E2097D24200687F200D963DC /* TMServiceResponse.swift in Sources */,
+				E2097D3920068EFB00D963DC /* TMHomeTableViewCell.swift in Sources */,
+				E2097D25200687F200D963DC /* TMBaseASyncOperation.swift in Sources */,
+				E2097D26200687F200D963DC /* TMServiceOperation.swift in Sources */,
+				E2097CE22006868300D963DC /* TMViewController.swift in Sources */,
+				E2097D22200687F200D963DC /* TMServiceDataModel.swift in Sources */,
 				E2097CE02006868300D963DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,11 +753,13 @@
 		};
 		E2097D052006868300D963DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0CAAF816E39B7A009ACE58E /* Pods-TMReddit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4FFQ945XL7;
-				INFOPLIST_FILE = TMReddit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TMReddit/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TMReddit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,11 +770,13 @@
 		};
 		E2097D062006868300D963DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2546F8C2EAAE112AED1C902E /* Pods-TMReddit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4FFQ945XL7;
-				INFOPLIST_FILE = TMReddit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TMReddit/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TMReddit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +787,7 @@
 		};
 		E2097D082006868300D963DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBCD83155DA42BA101BE29C /* Pods-TMRedditTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +805,7 @@
 		};
 		E2097D092006868300D963DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE8D65B4EE7089FB5937472 /* Pods-TMRedditTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +823,7 @@
 		};
 		E2097D0B2006868300D963DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1180CDEC21AADB531D670F14 /* Pods-TMRedditUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +840,7 @@
 		};
 		E2097D0C2006868300D963DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E6D007ECDE4D1E1DBA6F8F /* Pods-TMRedditUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
